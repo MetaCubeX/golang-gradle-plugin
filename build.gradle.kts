@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.kr328.gradle.golang"
+group = "com.github.MetaCubeX.gradle.golang"
 version = "3.0.0"
 
 dependencies {
@@ -44,21 +44,21 @@ publishing {
             pom {
                 name.set("Golang Gradle")
                 description.set("A gradle plugin for go module building.")
-                url.set("https://github.com/Kr328/golang-gradle-plugin")
+                url.set("https://github.com/MetaCubeX/golang-gradle-plugin")
                 licenses {
                     license {
                         name.set("MIT License")
-                        url.set("https://github.com/Kr328/golang-gradle-plugin/blob/main/LICENSE")
+                        url.set("https://github.com/Metacubex/golang-gradle-plugin/blob/main/LICENSE")
                     }
                 }
                 developers {
                     developer {
-                        name.set("Kr328")
+                        name.set("MetaCubeX")
                     }
                 }
                 scm {
-                    connection.set("scm:git:https://github.com/Kr328/golang-gradle-plugin.git")
-                    url.set("https://github.com/Kr328/golang-gradle-plugin")
+                    connection.set("scm:git:https://github.com/Metacubex/golang-gradle-plugin.git")
+                    url.set("https://github.com/MetaCubeX/golang-gradle-plugin")
                 }
             }
         }
@@ -66,8 +66,8 @@ publishing {
     repositories {
         mavenLocal()
         maven {
-            name = "kr328app"
-            url = uri("https://maven.kr328.app/releases")
+            name = "MetaCubeXapp"
+            url = uri("https://maven.MetaCubeX.app/releases")
             credentials(PasswordCredentials::class.java)
         }
     }

@@ -1,4 +1,4 @@
-package com.github.kr328.gradle.golang;
+package com.github.MetaCubeX.gradle.golang;
 
 import org.gradle.api.Action;
 import org.gradle.api.NamedDomainObjectContainer;

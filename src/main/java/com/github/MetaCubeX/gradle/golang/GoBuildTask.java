@@ -1,4 +1,4 @@
-package com.github.kr328.gradle.golang;
+package com.github.MetaCubeX.gradle.golang;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.GradleException;
@@ -110,6 +110,9 @@ public abstract class GoBuildTask extends DefaultTask {
         final List<String> asmFlags = new ArrayList<>();
         final List<String> gcFlags = new ArrayList<>();
         final List<String> ldFlags = new ArrayList<>();
+
+        ldFlags.add("-X");
+        ldFlags.add("\"github.com/metacubex/mihomo/constant.Version=$(VERSION)\"");
 
         final Iterator<String> flagIterator = variant.getFlags().iterator();
         while (flagIterator.hasNext()) {
